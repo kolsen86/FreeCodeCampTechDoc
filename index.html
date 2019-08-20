@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>What Web Development Language Should You Learn First?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/a6e4f37c69.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="sidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span id="close">CLOSE</span>&times;</a>
+            <header>
+                <h2>Choices</h2>
+            </header>
+            <a class="nav-link" id="menu-intro" href="#intro">Introduction</a>
+            <button class="dropdown-btn">Front-End
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a class="nav-link" href="#html">HTML</a>
+                <a class="nav-link" href="#css">CSS</a>
+                <a class="nav-link" href="#js">JavaScript</a>
+                <a class="nav-link" href="#compiled">Compiled</a>
+            </div>
+            <button class="dropdown-btn">Back-End
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a class="nav-link" href="#python">Python</a>
+                <a class="nav-link" href="#node">JavaScript</a>
+                <a class="nav-link" href="#java">Java</a>
+                <a class="nav-link" href="#ruby">Ruby</a>
+                <a class="nav-link" href="#php">PHP</a>
+                <a class="nav-link" href="#db">Databases</a>
+            </div>
+            <button class="dropdown-btn">Full-Stack
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a class="nav-link" href="#nodejs">JavaScript (Node.js)</a>
+            </div>
+            <a class="nav-link" id="menu-end" href="#end">Parting Words</a>
+        </div>
+    </nav>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <main id="main-doc">
+        <header>
+            <h1>Picking your First Web Development Language</h1>
+        </header>
+        <section class="main-section" id="intro">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+
+            <p>
+                So you've decided to take the plunge. You're tired of milking Beaver anal glands to make vanilla
+                flavoring <a href="https://www.foxnews.com/science/beaver-butts-emit-goo-used-in-vanilla-flavored-foods"
+                    rel="noopener" target="_blank">(It's TRUE!!)</a> from 9 - 5 and want to make a career change.
+                However, your religion won't allow you to work at the Goat Cheese factory, because everyone knows that
+                all goats are the devil, <a
+                    href="https://www.foxnews.com/tech/birth-of-demon-goat-terrifies-town-police-are-called"
+                    rel="noopener" target="_blank">(Thanks again Fox News!!)</a> and you can't work at the <a
+                    href="https://www.langleyadvancetimes.com/business/ice-cream-from-water-buffalo-milk-healthy-and-tasty/"
+                    rel="noopener" target="_blank">Water Buffalo Gelato</a> Ranch the next town over because you're
+                extremely frightened by them after the incident at the beach last summer. So what are you to do??
+                <br>
+                <img id="buffalo"
+                    src="https://res.cloudinary.com/dmks1qdth/image/upload/c_scale,w_785/v1566160313/buffalo_1.jpg">
+                <figcaption>Call me Yak one more time, I dare you.</figcaption>
+                <br>
+                While you're commitment to non-standard dairy products is enviable, maybe back away from the Yak teat
+                (Water Buffalo!!! I'm SORRY!!), and try your hand at web development.
+            </p>
+
+            <h2>Reasons to learn Web Development</h2>
+            <ul>
+                <li>Don't need a college education to break into the field. (Although having a CS degree definitely
+                    won't hurt your chances of getting hired!)</li>
+                <li>A totally average web developer can expect to make around $75,580 dollars (USD) a year.<br><a
+                        href="https://www.bls.gov/oes/current/oes151134.htm" rel="noopener" target="_blank"><cite
+                            style="font-size: 1.2vw">(Bureau of Labor Statistics)</cite></a></li>
+                <li>Employment for web developers in projected to grow 15% by 2026, which is much faster than the
+                    average for all occupations.<br><a
+                        href="https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm"
+                        rel="noopener" target="_blank"><cite style="font-size: 1.2vw">(Bureau of Labor
+                            Statistics)</cite></a></li>
+                <li>Want to work from home? A career in web development gives you a great chance at being able to work
+                    remotely with 11.1% of web developers from a 2017 Stack Overflow developer survey reporting they
+                    work from home full-time. Another 9.4% report they work from home less than half the time, but more
+                    than once a week.</li>
+                <li>A career in web development fits any type of person well. Are you super creative? How about learning
+                    CSS and JavaScript well and letting your creative juices flow. More of a logic person? Master Python
+                    and let logic prevail.</li>
+                <li>And so much more!</li>
+            </ul>
+
+            <p>
+                All of the preceding is fine and good, but there is just so much information out there online. Everyone
+                has a different opinion on how to start learning web development and which language to start learning
+                first. Well, I can't answer that for you, but I can give you some advice on which language you might
+                want to learn first as well as how to get started learning it. So without any further adieu, on to the
+                meat of the article.
+            </p>
+
+        </section>
+
+        <section class="main-section" id="front-end">
+            <header>
+                <h2>Front-End Languages</h2>
+            </header>
+
+            <p>
+                Front-end development, or client-side development, is all about style and user experience. If you are a
+                creative person and not too great with logic, you probably will want to focus on front-end languages and
+                technologies. Unlike back-end development, your choices of languages are somewhat limited for the
+                front-end. Front-end developers primarily deal with HTML, CSS, and JavaScript. There are some slight
+                deviations from those 3 (I'm talking compiled languages, which we will touch on a bit farther down.),
+                but in the end it all boils down to those 3. Also unlike back-end development, to become a front-end
+                developer you must learn, at the very minimum, at least HTML and CSS. That is just the basics for
+                front-end development though. If you really want to make a career out of front-end development, you had
+                better learn JavaScript as well. Enough with the filler though, let us move on to the languages of the
+                front-end.
+            </p>
+
+        </section>
+        <section class="main-section" id="html">
+            <header>
+                <h3>HTML</h3>
+            </header>
+            <details>
+                <summary>What is HTML?</summary>
+                <p>
+                    HTML is the structure of every single website you have ever visited, including this one. Don't
+                    believe me? First of all, screw you for calling me a liar!
+                    <br>
+                    <img id="liar" src="https://res.cloudinary.com/dmks1qdth/image/upload/v1566175400/liar.jpg" >
+                    <br>
+                    <svg width="0" height="0">
+                            <clipPath id="liar">
+                              <polygon points="42 313,44 9,44 8,566 9,566 315">
+                              </polygon>
+                            </clipPath>
+                          </svg>
+                    Second of all, just right click anywhere on this webpage and click on "inspect" or "inspect
+                    element". See all those &lt;section&gt;'s and &lt;span&gt;'s? That's HTML! You can go to any website
+                    on the internet and do the same thing and you will see those HTML elements and many more.
+                </p>
+
+            </details>
+            <details>
+                <summary>What HTML is not.</summary>
+                <p>
+                    Get ready to be shocked. HTML is not actually a programming language!
+                    <br>
+                    <img id="shocked"
+                        src="https://res.cloudinary.com/dmks1qdth/image/upload/c_scale,h_409,w_600/v1566176145/shocked.jpg">
+                    <figcaption>WHHAAATTTT!!!!????</figcaption>
+                    <br>
+                    I know, right? What am I doing talking to you about a non-programming language in an article about
+                    what programming language to learn first for web development? Well, if you want to become a
+                    front-end developer (or really a web developer in general) than you have to start with HTML. Instead
+                    of being a programming language, it is what is called a markup language and it is a web standard.
+                    Meaning if you want to be a web developer, than you have to learn HTML. There is no way around it.
+                </p>
+            </details>
+            <details>
+                <summary>Why you should learn HTML.</summary>
+                <p>
+                    Are you even listening to me? I literally just told you that if you want to be a web developer you
+                    MUST learn HTML. It is the structure of every website online.
+                </p>
+            </details>
+            <details>
+                <summary>How difficult is HTML to learn?</summary>
+                <span class="fa fa-star-half-alt "></span>
+                <span class="far fa-star"></span>
+                <span class="far fa-star"></span>
+                <span class="far fa-star"></span>
+                <span class="far fa-star"></span>
+                <br>
+                <p>
+                    As far as what you have to learn in order to become a web developer, HTML is by far the easiest.
+                    Hell, you could slap together an entire website only using 3 or 4 different HTML elements. It
+                    wouldn't be the prettiest or most functional website, but it would be a website.
+                </p>
+            </details>
+            <details>
+                <summary>Where to learn HTML.</summary>
+                <ul>
+                    <li>
+                        <a href="https://www.codecademy.com" rel="noopener" target="_blank">CodeAcademy - Introduction
+                            to HTML</a>
+                    </li>
+                    <li>
+                        <a href="https://www.freecodecamp.org/" rel="noopener" target="_blank">FreeCodeCamp - Intro to
+                            HTML</a>
+                    </li>
+                    <li>
+                        <a href="https://w3schools.com/html/" rel="noopener" target="_blank">W3Schools - HTML Path</a>
+                    </li>
+                </ul>
+            </details>
+        </section>
+        <section class="main-section" id="css">
+            <header>
+                <h3>CSS</h3>
+            </header>
+            <details>
+                <summary>What is CSS?</summary>
+                <p>
+                    CSS is the style of every website you have ever visited online. If the internet was a house, HTML
+                    would be the support and structure, or the 2x4's and drywall. As well as it's cement foundation.
+                    Then CSS would be the houses style. It would be the paint, furnishings, wallpaper, and anything else
+                    you would consider a visual style. CSS pretties up your HTML and makes it nice to look at.
+                </p>
+                <img id="prettyHTML"
+                    src="https://res.cloudinary.com/dmks1qdth/image/upload/c_scale,w_626/v1566180037/prettyHTML.jpg">
+                <figcaption>You sure do got some purdy HTML there boy.</figcaption>
+            </details>
+            <details>
+                <summary>What CSS is not.</summary>
+                <p>
+                    CSS, like HTML, is not actually a programming language.
+                    <br>
+                    <img id="kiddingMe"
+                        src="https://res.cloudinary.com/dmks1qdth/image/upload/c_scale,w_598/v1566180313/kiddingMe.jpg">
+                    <figcaption>You've got to be kidding me...</figcaption>
+                    <br>
+                    Instead of being a programming language, it is just a stylesheet or rules for your website. Also,
+                    like HTML, CSS is a web standard. Meaning that if you want to be a front-end web developer, than you
+                    had better learn CSS.
+                </p>
+            </details>
+            <details>
+                <summary>Why you should learn CSS.</summary>
+                <p>
+                    I probably could have just copy and pasted everything from the HTML section here. Anywho, you should
+                    learn CSS because, as a front-end developer, you will deal with CSS on a daily (or even hourly)
+                    basis. Plus, CSS is fun. There are so many different things you can do with it.
+                </p>
+            </details>
+            <details>
+                <summary>How difficult is CSS to learn?</summary>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-alt"></span>
+                <span class="far fa-star"></span>
+                <span class="far fa-star"></span>
+                <span class="far fa-star"></span>
+                <p>
+                    I could have rated the difficulty of CSS in a couple different ways, but I chose to rate it on how
+                    difficult it is to get the basics down. Mastering CSS is a bit more difficult because there is just
+                    so much you can do with it.
+                </p>
+            </details>
+            <details>
+                <summary>Where to learn CSS.</summary>
+
+                <ul>
+                    <li>
+                        <a href="https://www.codecademy.com" rel="noopener" target="_blank">CodeAcademy - Introduction
+                            to CSS</a>
+                    </li>
+                    <li>
+                        <a href="https://www.freecodecamp.org/" rel="noopener" target="_blank">FreeCodeCamp - Intro to
+                            CSS</a>
+                    </li>
+                    <li>
+                        <a href="https://w3schools.com/css/" rel="noopener" target="_blank">W3Schools - CSS Path</a>
+                    </li>
+                </ul>
+            </details>
+        </section>
+        <section class="main-section" id="js">
+            <header>
+                <h3>JavaScript</h3>
+            </header>
+            <details>
+                <summary>What is JavaScript?</summary>
+                <p>
+                    JavaScript is our first actual programming language! JavaScript gives you the power to make your
+                    websites dynamic. It can control, manipulate, and change all of your HTML and CSS content. You can
+                    animate your website with JavaScript (You can also animate with CSS, but not to the same degree as
+                    with JavaScript.). Just about any website you've ever visited that has an element of interactivity
+                    to it has been created with JavaScript. JavaScript is King on the internet. It is one of the most,
+                    if not THE most, versatile programming languages around today. Just to keep up with our house
+                    analogy for internet technologies, JavaScript would be like the electricity coursing through the
+                    wires of the house. So, we have the structure and foundation of the house made from HTML. All the
+                    decorations, furnishings, and paint (All the style) of the house is CSS. JavaScript powers it all
+                    though. JavaScript makes the house dynamic by giving it parts that can move and change.
+                </p>
+            </details>
+
+            <details>
+                <summary>Why you should learn JavaScript.</summary>
+                <p>
+                    If your goal is to get paid to be a front-end developer, than you had better get good at JavaScript.
+                    Sure, you can create some pretty good looking websites with only HTML and CSS, but making websites
+                    dynamic and interactive is what is going to get you paid. Back to the house analogy once again. You
+                    can certainly build a house with only the structure, foundation (HTML), furnishings, paint, and
+                    decorations (CSS). (Just for the record, websites built with only HTML and CSS are called static
+                    sites. They are static because they don't have any real moving parts to them) Is anyone going to
+                    want to visit that house though? I would think they would want to go to the house with electricity.
+                    The house that has air conditioning, heat, and T.V. The house with JavaScript.
+                </p>
+                <img id="static"
+                    src="https://res.cloudinary.com/dmks1qdth/image/upload/c_scale,h_514/v1566252434/static.jpg">
+                <figcaption>Static website developer.</figcaption>
+            </details>
+            <details>
+                <summary>How difficult is JavaScript to learn?</summary>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="far fa-star"></span>
+                <span class="far fa-star"></span>
+
+                <p>
+                    JavaScript is considered a fairly easy language to learn and is often recommended as a first language for a beginner to learn.  This is because JavaScript is generally pretty forgiving with hoe you write your code.  This can be viewed as a positive or a negative to different people.  Some developers like how flexible and forgiving JavaScript can be as it makes everything a bit easier.  On the other hand, some developers feel like that flexibility and forgiveness can lead to sloppy code.  Also, if your writing a large application, it can lead to hard to find bugs in your program by breaking other bits of code down the line that may rely on the sloppy code JavaScript allowed you to write.  There are solutions to this problem, some of which we will cover in the compiled (to JavaScript) section.
+                </p>
+            </details>
+            <details>
+                <summary>Hello World!</summary>
+                <p>
+                    How to write the classic "Hello World" program in JavaScript
+                </p>
+                <code>
+                    var message = "Hello World!"
+                                console.log("message");
+                            </code>
+            </details>
+            <details>
+                <summary>Where to learn JavaScript.</summary>
+                <ul>
+                    <li><a href="https://javascript.info/" rel="noopener" target="_blank">The Modern JavaScript
+                            Tutorial</a></li>
+                    <li><a href="https://www.codecademy.com" rel="noopener" target="_blank">CodeAcademy - Introduction
+                            to JavaScript</a></li>
+                    <li>
+                        <a href="https://www.freecodecamp.org/" rel="noopener" target="_blank">FreeCodeCamp - Intro to
+                            JavaScript</a>
+                    </li>
+                    <li>
+                        <a href="https://eloquentjavascript.net/" rel="noopener" target="_blank">Eloquent JavaScript</a>
+                    </li>
+                </ul>
+            </details>
+        </section>
+        <section class="main-section" id="compiled">
+            <header>
+                <h3>Compiled (to JavaScript)</h3>
+            </header>
+            <details>
+                <summary>What does "Compiled to JavaScript" mean?</summary>
+                <p>
+                    Compiled to JavaScript means that you can write your code in a different programming language, and at runtime it will compile your code to JavaScript.  Basically it's just a way to write JavaScript without writing JavaScript.
+                </p>
+            </details>
+
+            <details>
+                <summary>Why not just write JavaScript then?</summary>
+                <p>
+                    As we covered in the JavaScript section, many developers don't like how forgiving plain JavaScript can be.  A language that is compiled to JavaScript can fix that and make you write cleaner more maintainable code.  Languages that compile to JavaScript can also give you different features and benefits such as type-safety and inheritance.
+                </p>
+            </details>
+            <details>
+                <summary>What are some of the languages that compile to JavaScript?</summary>
+
+                <ul>
+                    <li><span class="compiled">TypeScript</span> - The most popular of the compiled to JavaScript languages.  Created by Microsoft, TypeScript gives you type-safety and all the newest features from ES6 and ES7.</li>
+                    <li><span class="compiled">ClojureScript</span> - <a href="https://www.codenewbie.org/blogs/object-oriented-programming-vs-functional-programming">FUNCTIONAL PROGRAMMING!!!</a></li>
+                    <li><span class="compiled">Kotlin</span> - Uses the JVM (Java Virtual Machine).  Language of Android development.</li>
+                    <li><span class="compiled">Elm</span> - Allows you to combine HTML and JavaScript in an easier (and easier to read) way.</li>
+                    <li><span class="compiled">Dart</span> - Created by Google and the language of the popular mobile app development framework Flutter.</li>
+                </ul>
+
+            </details>
+            <details>
+                <summary>Hello World!</summary>
+                <p>
+                    How to write the classic "Hello World" program in 3 of the most famous compiled to JavaScript languages.
+                </p>
+                <ul>
+                    <li>
+                        <h4>TypeScript</h4>
+                        <code>
+                            var message:string = "Hello World!";
+                            console.log(message)
+                        </code>
+                    </li>
+                    <li>
+                        <h4>Dart</h4>
+                        <code>
+                            void main() {
+                                print("Hello World!");
+                            }
+                        </code>
+                    </li>
+                    <li>
+                        <h4>Elm</h4>
+                        <code>
+                            import Html exposing (text)
+
+                            main = 
+                                text "Hello World!"
+                        </code>
+                    </li>
+                </ul>
+
+            </details>
+            <details>
+                <summary>Where to learn more about compiled (to JavaScript) languages</summary>
+ 
+                <ul>
+                    <li><a href="https://www.infoworld.com/article/2606392/156855-X-languages-that-compile-to-JavaScript.html#slide1" rel="noopener" target="_blank">9 Programming languages that bring new joy to JavaScript</a></li>
+                    <li><a href="https://dev.to/areknawo/top-10-js-compilables-jp4" rel="noopener" target="_blank">Top 10 JavaScript Compilables</a></li>
+                    <li><a href="https://medium.com/openmindonline/js-monday-07-javascript-alternatives-c7df61ce4c16" rel="noopener" target="_blank">JavaScript Alternatives!</a></li>
+                    <li><a href="http://blog.debugme.eu/best-alternatives-to-javascript/" rel="noopener" target="_blank">The top 10 JavaScript alternatives.  How to choose?</a></li>
+                </ul>
+            </details>
+        </section>
+        <section class="main-section" id="back-end">
+            <header>
+                <h2>Back-End Languages</h2>
+            </header>
+            <p>
+                In the interest of time and energy, I am going to try to stick mostly to what the languages can do as far as web development.
+            </p>
+        </section>
+        <section class="main-section" id="python">
+            <header>
+                <h3>Python</h3>
+            </header>
+            <details>
+                <summary>What is Python?</summary>
+                <p>
+                    Python is one of the most popular programming languages around today.  This is thanks to it's simple syntax, which looks almost like written English.  Python, along with JavaScript and Ruby (Which we will get to shortly), is commonly mentioned and recommended as a good first language for a aspiring new programmer to learn.  Since Python is not a scripting language, like JavaScript, it has to be used as a back-end language to add logic to your websites.
+                </p>
+            </details>
+
+            <details>
+                <summary>Why you should learn Python.</summary>
+                <p>
+                    As I previously mentioned, Python is among the easiest programming languages to learn for a beginner.  It has easy to understand syntax that almost looks like written English.  Python also recommended to new programmers because of it's philosophy of "There should be one-- and preferably only one --obvious way to do it." as written in the<a href="https://zen-of-python.info" rel="noopener" target="_blank">Zen of Python</a>.  This philosophy forces new developers to learn the right way of doing something as opposed to many other programming languages which have many ways of doing the same thing.
+                </p>
+                <span>
+                    Some more reasons to choose Python as a first programming language are:
+                </span>
+                <ul>
+                    <li>
+                        It is used by a lot of companies.<br><br>
+                        Google<br>Facebook<br>Instagram<br>Spotify<br>Quora<br>Netflix<br>Dropbox<br>
+                        That is just a few of the big companies that use Python a lot in their services.  So knowing Python will make you very hireable.
+                    </li>
+                    <li>
+                        The average starting salary for a back-end developer with Python skills is $65,642 dollars (USD) a year.<br><span>According to <a href="https://www.payscale.com/research/US/Job=Web_Developer/Salary/89ec65af/Python" rel="noopener" target="_blank">Payscale.com</a></span>
+                    </li>
+                    <li>
+                        Since Python is such a popular language, there is a butt load of free resources available online to learn from.
+                    </li>
+                    <li>
+                        Also, since Python is such a popular language, it has a very large and active community online.  So, when you get stuck on a problem in your code, it is much easier to get help from someone online than with many other languages.
+                    </li>
+                </ul>
+            </details>
+            <details>
+                <summary>How difficult is Python to learn?</summary>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="far fa-star"></span>
+                <span class="far fa-star"></span>
+            </details>
+            <p>
+                As I stated earlier, Python is generally considered one of the easiest languages for a beginner to pick up.
+            </p>
+            <details>
+                <summary>Hello World!</summary>
+                <p>
+                    How to write the classic "Hello World" program in Python
+                </p>
+                <code>
+                                print("Hello World!")
+                            </code>
+            </details>
+            <details>
+                <summary>Where to learn Python.</summary>
+                <ul>
+                    <li><a href="https://automatetheboringstuff.com" rel="noopener" target="_blank">Automate the Boring Stuff with Python</a></li>
+                    <li><a href="https://www.codecademy.com/" rel="noopener" target="_blank">CodeAcademy - Intro to Python</a></li>
+                    <li><a href="https://python.swaroopch.com" rel="noopener" target="_blank">A Byte of Python </a></li>
+                </ul>
+            </details>
+        </section>
+        <section class="main-section" id="node">
+            <header>
+                <h3>JavaScript (Node.js)</h3>
+            </header>
+            <details>
+                <summary>What is Node.js?</summary>
+                <p>
+                    
+                </p>
+            </details>
+
+            <details>
+                <summary>Why you should learn Node.js.</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+            <details>
+                <summary>How difficult is Node.js to learn?</summary>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="far fa-star"></span>
+            </details>
+            <details>
+                <summary>Hello World!</summary>
+                <p>
+                    How to write the classic "Hello World" program in Node.js
+                </p>
+                <code>
+                                console.log("Hello World!");
+                            </code>
+            </details>
+            <details>
+                <summary>Where to learn Node.js.</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+        </section>
+        <section class="main-section" id="java">
+            <header>
+                <h3>Java</h3>
+            </header>
+            <details>
+                <summary>What is Java?</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+
+            <details>
+                <summary>Java vs. JavaScript</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+
+            <details>
+                <summary>Why you should learn Java.</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+            <details>
+                <summary>How difficult is Java to learn?</summary>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-alt"></span>
+            </details>
+            <details>
+                <summary>Hello World!</summary>
+                <p>
+                    How to write the classic "Hello World" program in Java
+                </p>
+                <code>
+                                console.log("Hello World!");
+                            </code>
+            </details>
+            <details>
+                <summary>Where to learn Java.</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+        </section>
+        <section class="main-section" id="ruby">
+            <header>
+                <h3>Ruby</h3>
+            </header>
+            <details>
+                <summary>What is Ruby?</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+
+            <details>
+                <summary>Why you should learn Ruby.</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+            <details>
+                <summary>How difficult is Ruby to learn?</summary>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-alt"></span>
+                <span class="far fa-star"></span>
+                <span class="far fa-star"></span>
+            </details>
+            <details>
+                <summary>Hello World!</summary>
+                <p>
+                    How to write the classic "Hello World" program in Ruby
+                </p>
+                <code>
+                                console.log("Hello World!");
+                            </code>
+            </details>
+            <details>
+                <summary>Where to learn Ruby.</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+        </section>
+        <section class="main-section" id="php">
+            <header>
+                <h3>PHP</h3>
+            </header>
+            <details>
+                <summary>What is PHP?</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+
+            <details>
+                <summary>Why you should learn PHP.</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+            <details>
+                <summary>How difficult is PHP to learn?</summary>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-alt"></span>
+                <span class="far fa-star"></span>
+                <span class="far fa-star"></span>
+            </details>
+            <details>
+                <summary>Hello World!</summary>
+                <p>
+                    How to write the classic "Hello World" program in PHP
+                </p>
+                <code>
+                                console.log("Hello World!");
+                            </code>
+            </details>
+            <details>
+                <summary>Where to learn PHP.</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+        </section>
+        <section class="main-section" id="db">
+            <header>
+                <h3>Databases</h3>
+            </header>
+            <details>
+                <summary>What do you mean Databases?</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+
+            <details>
+                <summary>Why you have to learn Databases for Back-End development.</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+            <details>
+                <summary>What are some different databases to learn?</summary>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut cum dolores, eaque nobis quidem dolor,
+                    quasi omnis deleniti quia dignissimos vel sit earum sapiente facilis voluptatum debitis, aperiam
+                    perferendis aspernatur!
+                </p>
+            </details>
+
+
+            <details>
+                <summary>Where to learn about Databases.</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam.
+                    Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+        </section>
+        <section class="main-section" id="full-stack">
+            <header>
+                <h2>Full-Stack Languages</h2>
+            </header>
+        </section>
+        <section class="main-section" id="nodejs">
+            <header>
+                <h3>JavaScript (JavaScript + Node.js)</h3>
+            </header>
+            <details>
+                <summary>JAVASCRIPT AGAIN!!!???</summary>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus atque ut, sequi minus
+                    perferendis! Vero animi accusamus explicabo consequuntur labore. Voluptatibus, laboriosam. Impedit,
+                    natus consequuntur quod ex architecto non.
+                </p>
+            </details>
+
+        </section>
+        <section class="main-section" id="end">
+            <header>
+                <h2>It doesn't Matter (That Much)</h2>
+            </header>
+            <p>
+                In the end, it doesn't really matter which language you choose first. As long as your learning to
+                programme. Other than HTML and CSS, most languages have at least somewhat similar syntax, and rules, and
+                methods. Once you learn one language well, you will be able to pick up your next language quicker. Than
+                the next language you'll learn quicker than that, and so on and so forth.
+            </p>
+        </section>
+
+    </main>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

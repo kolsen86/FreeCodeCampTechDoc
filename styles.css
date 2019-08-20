@@ -1,0 +1,147 @@
+body,
+html {
+  background-color: #6b8ff3;
+}
+
+nav .sidenav {
+  height: 100%;
+  width: 18%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-top: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .sidenav .closebtn {
+  position: absolute;
+  top: -6.5%;
+  left: 19%;
+  font-size: 36px;
+  margin-left: 70px;
+  margin-top: 3%;
+  color: white;
+  z-index: 3;
+}
+
+nav .sidenav .closebtn #close {
+  font-size: 1.55vw;
+  margin-left: -29%;
+  margin-top: -103%;
+}
+
+nav .sidenav a,
+nav .sidenav .dropdown-btn {
+  padding: 36px 8px 16px 16px;
+  text-decoration: none;
+  font-size: 1.65vw;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .sidenav .dropdown-container a:hover {
+  color: #f1f1f1;
+  -webkit-animation: glow2 1s ease-in-out infinite alternate;
+          animation: glow2 1s ease-in-out infinite alternate;
+}
+
+nav .sidenav #menu-intro:hover,
+nav .sidenav #menu-end:hover,
+nav .sidenav .dropdown-btn:hover {
+  color: #f1f1f1;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+          animation: glow 1s ease-in-out infinite alternate;
+}
+
+nav .sidenav h2 {
+  color: #dde031;
+  text-align: center;
+  border-bottom: 5px solid yellow;
+  text-shadow: -1px 1.2px 0.75px #2759b6;
+  -webkit-animation: glow3 3s ease-in-out infinite alternate;
+          animation: glow3 3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+@-webkit-keyframes glow2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0f455a, 0 0 40px #0f455a, 0 0 50px #0f455a, 0 0 60px #0f455a, 0 0 70px #0f455a;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #6292ec, 0 0 40px #6292ec, 0 0 50px #6292ec, 0 0 60px #6292ec, 0 0 70px #6292ec, 0 0 80px #6292ec;
+  }
+}
+
+@keyframes glow2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0f455a, 0 0 40px #0f455a, 0 0 50px #0f455a, 0 0 60px #0f455a, 0 0 70px #0f455a;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #6292ec, 0 0 40px #6292ec, 0 0 50px #6292ec, 0 0 60px #6292ec, 0 0 70px #6292ec, 0 0 80px #6292ec;
+  }
+}
+
+@-webkit-keyframes glow3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #7a0f07, 0 0 40px #7a0f07, 0 0 50px #7a0f07, 0 0 60px #7a0f07, 0 0 70px #7a0f07;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fc4801, 0 0 40px #fc4801, 0 0 50px #fc4801, 0 0 60px #fc4801, 0 0 70px #fc4801, 0 0 80px #fc4801;
+  }
+}
+
+@keyframes glow3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #7a0f07, 0 0 40px #7a0f07, 0 0 50px #7a0f07, 0 0 60px #7a0f07, 0 0 70px #7a0f07;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fc4801, 0 0 40px #fc4801, 0 0 50px #fc4801, 0 0 60px #fc4801, 0 0 70px #fc4801, 0 0 80px #fc4801;
+  }
+}
+
+nav ::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+nav .dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+nav .fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+/*# sourceMappingURL=styles.css.map */

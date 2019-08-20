@@ -1,0 +1,48 @@
+#main-doc {
+  height: auto;
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+#main-doc header {
+  text-align: center;
+  margin-top: 5%;
+}
+
+#main-doc header h1 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #570470;
+          text-decoration-color: #570470;
+}
+
+#main-doc header h2 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #243cc4;
+          text-decoration-color: #243cc4;
+}
+
+#main-doc header h3 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #087a75;
+          text-decoration-color: #087a75;
+  margin-left: -55%;
+}
+
+#buffalo {
+  margin: 3% 0 0 15.5%;
+  width: 70%;
+  height: auto;
+  -webkit-box-shadow: 7.5px 7px 15px #4e3a3a;
+          box-shadow: 7.5px 7px 15px #4e3a3a;
+  border-radius: 25px;
+}
+
+figcaption {
+  margin-left: 35.8%;
+}
+
+p {
+  text-indent: 50px;
+}
+/*# sourceMappingURL=main.css.map */

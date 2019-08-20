@@ -1,0 +1,43 @@
+#main-doc {
+    height: auto;
+    transition: margin-left .5s;
+    padding: 20px;
+
+        header {
+            text-align: center;
+            margin-top: 5%;
+
+                h1 {
+                    text-decoration: underline;
+                    text-decoration-color: rgb(87, 4, 112);
+                }
+
+                h2 {
+                    text-decoration: underline;
+                    text-decoration-color: rgb(36, 60, 196);
+                }
+
+                h3 {
+                    text-decoration: underline;
+                    text-decoration-color: rgb(8, 122, 117);
+                    margin-left: -55%;
+                }
+        }
+}
+
+#buffalo {
+    margin:  3% 0 0 15.5%;
+    width: 70%;
+    height: auto;
+    box-shadow: 7.5px 7px 15px rgb(78, 58, 58);
+    border-radius: 25px;
+}
+
+figcaption {
+    margin-left: 35.8%;
+}
+
+p {
+    text-indent: 50px;
+}
+

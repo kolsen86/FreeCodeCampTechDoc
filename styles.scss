@@ -1,0 +1,139 @@
+body,
+html {
+    background-color: rgb(107, 143, 243);
+}
+
+nav {
+    .sidenav {
+        height: 100%;
+        width: 18%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow: scroll;
+        overflow-x: hidden;
+        padding-top: 20px;
+        transition: 0.5s;
+
+        .closebtn {
+            position: absolute;
+            top: -6.5%;
+            left: 19%;
+            font-size: 36px;
+            margin-left: 70px;
+            margin-top: 3%;
+            color: white;
+            z-index: 3;
+
+                #close {
+                    font-size: 1.55vw;
+                    margin-left: -29%;
+                    margin-top: -103%;
+                
+                }
+          }
+
+        a,
+        .dropdown-btn {
+            padding: 36px 8px 16px 16px;
+            text-decoration: none;
+            font-size: 1.65vw;
+            color: #818181;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .dropdown-container {
+            a:hover {
+                color: #f1f1f1;
+                animation: glow2 1s ease-in-out infinite alternate;
+            }
+        }
+
+        #menu-intro:hover,
+        #menu-end:hover,
+        .dropdown-btn:hover {
+            color: #f1f1f1;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        h2 {
+            color: rgb(221, 224, 49);
+            text-align: center;
+            border-bottom: 5px solid yellow;
+            text-shadow: -1px 1.2px 0.75px rgb(39, 89, 182);
+            animation: glow3 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+                    0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073,
+                    0 0 70px #e60073;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+                    0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6,
+                    0 0 80px #ff4da6;
+            }
+        }
+
+        @keyframes glow2 {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0f455a,
+                    0 0 40px #0f455a, 0 0 50px #0f455a, 0 0 60px #0f455a,
+                    0 0 70px #0f455a;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #6292ec, 0 0 40px #6292ec,
+                    0 0 50px #6292ec, 0 0 60px #6292ec, 0 0 70px #6292ec,
+                    0 0 80px #6292ec;
+            }
+        }
+
+        @keyframes glow3 {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #7a0f07,
+                    0 0 40px #7a0f07, 0 0 50px #7a0f07, 0 0 60px #7a0f07,
+                    0 0 70px #7a0f07;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #fc4801, 0 0 40px #fc4801,
+                    0 0 50px #fc4801, 0 0 60px #fc4801, 0 0 70px #fc4801,
+                    0 0 80px #fc4801;
+            }
+        }
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+
+    .dropdown-container {
+        display: none;
+        background-color: #262626;
+        padding-left: 8px;
+    }
+
+    .fa-caret-down {
+        float: right;
+        padding-right: 8px;
+    }
+}
+
+img#liar {
+    /*Chrome,Safari*/
+-webkit-clip-path: polygon(42px 313px,44px 9px,44px 8px,566px 9px,566px 315px);
+
+/*Firefox*/
+clip-path: url("#clipPolygon");
+}
