@@ -20,3 +20,14 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("openNav").style.top = "0";
+  } else {
+    document.getElementById("openNav").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}

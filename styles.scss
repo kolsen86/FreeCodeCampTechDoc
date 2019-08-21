@@ -3,6 +3,34 @@ html {
     background-color: rgb(107, 143, 243);
 }
 
+
+
+* {
+    letter-spacing: 1.55px;
+    word-spacing: 1.6px;
+    line-height: 30px;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1.575vw;
+    font-weight: 530;
+}
+
+p {
+    width: 90%;
+    margin-left: 5%;
+    text-indent: 50px;
+    background-color: hsla(214, 75%, 58%, 0.466);
+    box-shadow: 25px 25px 35px hsla(199, 57%, 44%, 0.39), -25px -25px 35px hsla(199, 57%, 44%, 0.39);
+    border-radius: 25px;
+    padding: 7.5% 0 5.5% 2.5%;
+    text-shadow: 0.4px 0.4px 7.25px rgb(55, 115, 206);
+}
+
+h2 {
+    font-size: 2.5vw;
+    text-align: center;
+    margin: 10% 0;
+}
+
 nav {
     .sidenav {
         height: 100%;
@@ -19,21 +47,20 @@ nav {
 
         .closebtn {
             position: absolute;
-            top: -6.5%;
-            left: 19%;
-            font-size: 36px;
-            margin-left: 70px;
+            top: -5.29%;
+            left: 30%;
+            font-size: 40px;
+            margin-left: 100px;
             margin-top: 3%;
             color: white;
             z-index: 3;
-
-                #close {
-                    font-size: 1.55vw;
-                    margin-left: -29%;
-                    margin-top: -103%;
-                
-                }
           }
+
+          #close {
+            font-size: 1.15vw;
+            margin-left: 58%;
+            color: white;
+        }
 
         a,
         .dropdown-btn {
@@ -130,10 +157,12 @@ nav {
     }
 }
 
-img#liar {
-    /*Chrome,Safari*/
--webkit-clip-path: polygon(42px 313px,44px 9px,44px 8px,566px 9px,566px 315px);
-
-/*Firefox*/
-clip-path: url("#clipPolygon");
+#openNav {
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    background-color: rgb(12, 42, 66);
+    color: yellow;
+    padding: 0.5%;
+    border-radius: 9.5px;
 }

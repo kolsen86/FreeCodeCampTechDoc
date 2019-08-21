@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>What Web Development Language Should You Learn First?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+  
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/a6e4f37c69.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,500,700|Playfair+Display+SC:400,700,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav id="navbar">
         <div class="sidenav" id="mySidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span id="close">CLOSE</span>&times;</a>
+            <span id="close">CLOSE</span>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <header>
                 <h2>Choices</h2>
             </header>
@@ -47,7 +50,7 @@
             <a class="nav-link" id="menu-end" href="#end">Parting Words</a>
         </div>
     </nav>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <span id="openNav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
     <main id="main-doc">
         <header>
             <h1>Picking your First Web Development Language</h1>
@@ -69,13 +72,12 @@
                     rel="noopener" target="_blank">Water Buffalo Gelato</a> Ranch the next town over because you're
                 extremely frightened by them after the incident at the beach last summer. So what are you to do??
                 <br>
-                <img id="buffalo"
-                    src="https://res.cloudinary.com/dmks1qdth/image/upload/c_scale,w_785/v1566160313/buffalo_1.jpg">
-                <figcaption>Call me Yak one more time, I dare you.</figcaption>
-                <br>
-                While you're commitment to non-standard dairy products is enviable, maybe back away from the Yak teat
-                (Water Buffalo!!! I'm SORRY!!), and try your hand at web development.
             </p>
+            <img id="buffalo"
+            src="https://res.cloudinary.com/dmks1qdth/image/upload/c_scale,w_785/v1566160313/buffalo_1.jpg">
+        <figcaption>Call me Yak one more time, I dare you.</figcaption>
+        <br>
+            <div id="yak"> While you're commitment to non-standard dairy products is enviable, maybe back away from the Yak teat ( Water Buffalo!!! I'm SORRY!! ), and try your hand at web development.</div>
 
             <h2>Reasons to learn Web Development</h2>
             <ul>
@@ -518,11 +520,12 @@
                 <span class="fa fa-star"></span>
                 <span class="far fa-star"></span>
                 <span class="far fa-star"></span>
-            </details>
+            
             <p>
                 As I stated earlier, Python is generally considered one of the easiest languages for a beginner to pick
                 up.
             </p>
+        </details>
             <details>
                 <summary>Hello World!</summary>
                 <p>
@@ -550,16 +553,30 @@
             <details>
                 <summary>What is Node.js?</summary>
                 <p>
-                    Node.js is not actually a programming language, it is a JavaScript runtime environment.  Node.js gives JavaScript the ability to run on the back-end as well as the front-end.  As I said earlier JavaScript is an extremely versatile and powerful language.  JavaScript developers around the world rejoiced, in 2009, with the introduction of Node.js.  They could now create an entire web application on their own, using only JavaScript.<br>
+                    Node.js is not actually a programming language, it is a JavaScript runtime environment. Node.js
+                    gives JavaScript the ability to run on the back-end as well as the front-end. As I said earlier
+                    JavaScript is an extremely versatile and powerful language. JavaScript developers around the world
+                    rejoiced, in 2009, with the introduction of Node.js. They could now create an entire web application
+                    on their own, using only JavaScript.<br>
                 </p>
-                <img id="overworked" src="https://res.cloudinary.com/dmks1qdth/image/upload/c_scale,w_500/v1566338239/overworked.jpg">
-                <figcaption>I'm sure all that excitement wore off after al the back-end developers got fired and all the extra work got put on them though.</figcaption>
+                <img id="overworked"
+                    src="https://res.cloudinary.com/dmks1qdth/image/upload/c_scale,w_500/v1566338239/overworked.jpg">
+                <figcaption>I'm sure all that excitement wore off after al the back-end developers got fired and all the
+                    extra work got put on them though.</figcaption>
             </details>
 
             <details>
                 <summary>Why you should learn Node.js.</summary>
                 <p>
-                    The number 1 reason to learn Node.js has to be the fact that you are just using JavaScript.  This means that you only have to learn 1 programming language (HTML and CSS aren't programming languages, remember?) and you will be able to create both the back-end and the front-end of your web application.  Node.js also runs faster than most other back-end languages and scales well for growing websites or applications.  Another reason to learn Node.js is it's super famous package manager NPM (Node Package Manager) which gives you access to thousands of modules to add new features and boost productivity.  Finally, one last reason to learn Node.js, is it's vast community of developers online.  So if you ever get stuck on a problem, there is almost always someone available to ask online.
+                    The number 1 reason to learn Node.js has to be the fact that you are just using JavaScript. This
+                    means that you only have to learn 1 programming language (HTML and CSS aren't programming languages,
+                    remember?) and you will be able to create both the back-end and the front-end of your web
+                    application. Node.js also runs faster than most other back-end languages and scales well for growing
+                    websites or applications. Another reason to learn Node.js is it's super famous package manager NPM
+                    (Node Package Manager) which gives you access to thousands of modules to add new features and boost
+                    productivity. Finally, one last reason to learn Node.js, is it's vast community of developers
+                    online. So if you ever get stuck on a problem, there is almost always someone available to ask
+                    online.
                 </p>
             </details>
             <details>
@@ -590,9 +607,15 @@
             <details>
                 <summary>Where to learn Node.js.</summary>
                 <ul>
-                    <li><a href="https://nodeschool.io/#workshoppers" rel="noopener" target="_blank">Node School</a></li>
-                    <li><a href="https://www.coursera.org/learn/server-side-nodejs?ranMID=40328&ranEAID=q15T/SfRF14&ranSiteID=q15T_SfRF14-hPy017BmDiX.MV6s26m0zw&siteID=q15T_SfRF14-hPy017BmDiX.MV6s26m0zw&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=q15T/SfRF14" rel="noopener" target="_blank">Coursera - Server-side Development with Nodejs, Express, and MongoDB (When you click enroll in class, scroll to the bottom of the page and click "Audit this course".  You can then take the course for free, however you will not recieve the certificate.)</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=w-7RQ46RgxU&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp" rel="noopener" target="_blank">The Net Ninja on Youtube - Node.js Tutorial</a></li>
+                    <li><a href="https://nodeschool.io/#workshoppers" rel="noopener" target="_blank">Node School</a>
+                    </li>
+                    <li><a href="https://www.coursera.org/learn/server-side-nodejs?ranMID=40328&ranEAID=q15T/SfRF14&ranSiteID=q15T_SfRF14-hPy017BmDiX.MV6s26m0zw&siteID=q15T_SfRF14-hPy017BmDiX.MV6s26m0zw&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=q15T/SfRF14"
+                            rel="noopener" target="_blank">Coursera - Server-side Development with Nodejs, Express, and
+                            MongoDB (When you click enroll in class, scroll to the bottom of the page and click "Audit
+                            this course". You can then take the course for free, however you will not recieve the
+                            certificate.)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=w-7RQ46RgxU&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp"
+                            rel="noopener" target="_blank">The Net Ninja on Youtube - Node.js Tutorial</a></li>
                 </ul>
             </details>
         </section>

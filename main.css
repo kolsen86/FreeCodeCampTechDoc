@@ -5,28 +5,41 @@
   padding: 20px;
 }
 
+#main-doc .main-section #yak {
+  width: 90%;
+  margin-left: 5%;
+}
+
 #main-doc header {
   text-align: center;
   margin-top: 5%;
+  font-family: 'Playfair Display SC', serif;
 }
 
 #main-doc header h1 {
+  font-size: 3vw;
   text-decoration: underline;
   -webkit-text-decoration-color: #570470;
           text-decoration-color: #570470;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 650;
 }
 
 #main-doc header h2 {
+  font-size: 2.5vw;
   text-decoration: underline;
   -webkit-text-decoration-color: #243cc4;
           text-decoration-color: #243cc4;
+  font-family: 'Playfair Display SC', serif;
 }
 
 #main-doc header h3 {
+  font-size: 2.1vw;
   text-decoration: underline;
   -webkit-text-decoration-color: #087a75;
           text-decoration-color: #087a75;
-  margin-left: -55%;
+  margin: 5% 0 5% -55%;
+  font-family: 'Playfair Display SC', serif;
 }
 
 #buffalo {
@@ -42,7 +55,20 @@ figcaption {
   margin-left: 35.8%;
 }
 
-p {
-  text-indent: 50px;
+ul {
+  width: 90%;
+  margin-left: 1.5%;
+}
+
+ul li {
+  margin: 4% 0;
+}
+
+details {
+  cursor: pointer;
+}
+
+details summary {
+  margin-bottom: 3%;
 }
 /*# sourceMappingURL=main.css.map */
